@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trailhead Module Search</title>
+
+  <!-- CSS Import -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Javascript Import -->
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Trailhead Module Search</h1>
+    <h3>Search for Trailhead modules by PPM, points, or minutes.</h3>
+    <br>
+    <span>Last Updated September 21st 2023</span>
+    <span> | </span>
+    <span>An extension of <a
+        href="https://docs.google.com/spreadsheets/d/1_9YO8dsBjTuU1z90PO0GK6fIzvWCvXJv99gXiyhHVrg/edit?usp=sharing">this
+        Google Sheet</a>.</span>
+  </header>
+
+  <div class="module-list-header">
+    <span class="module-stat"><span id="moduleCount">-</span> Modules</span>
+    <span class="module-stat"><span id="ppmAverage">-</span> PPM Average</span>
+    <span class="module-stat"><span id="maxPoints">-</span> Points Max</span>
+    <span class="module-stat"><span id="maxMinutes">-</span> Minutes Max</span>
+  </div>
+  <div class="module-sort">
+    <button class="sort-button" id="sortPpmLow">Sort PPM (Low > High)</button>
+    <button class="sort-button" id="sortPpmHigh">Sort PPM (High > Low)</button>
+    <button class="sort-button" id="sortPointsLow">Sort Points (Low > High)</button>
+    <button class="sort-button" id="sortPointsHigh">Sort Points (High > Low)</button>
+    <button class="sort-button" id="sortMinutesLow">Sort Minutes (Low > High)</button>
+    <button class="sort-button" id="sortMinutesHigh">Sort Minutes (High > Low)</button>
+  </div>
+  <ul class="module-list" id="moduleList">
+    <!-- Modules will be populated here -->
+  </ul>
+
+  <footer>
+    <p>Made with ❤️ by <a href="https://daniel.stoiber.network">Daniel Stoiber</a></p>
+  </footer>
+
+</body>
+
+</html>
