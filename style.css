@@ -214,11 +214,29 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 footer a {
   color: #ffffff;
   text-decoration: underline;
+}
+
+/* "|" between footer span elements */
+@media (min-width: 601px) {
+  footer p:not(:last-child):after {
+    content: "|";
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Line break footer p */
+  footer {
+    display: block;
+  }
 }
 
 /* Dark mode based on system settings */
