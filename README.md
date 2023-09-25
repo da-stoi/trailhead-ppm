@@ -9,3 +9,14 @@ All the data comes from the Trailhead GraphQL API. The data is fetched using a N
 
 # Who
 Hey there! 👋 My name is Daniel Stoiber, I'm currently a student and full-stack developer. If you'd like to check out some of my work you can do so [here](https://daniel.stoiber.network). If you have any questions or feedback, feel free to shoot me an email at [daniel@stoiber.network](mailto:daniel@stoiber.network).
+
+# Anonymous Usage Statistics
+This website collects two types of anonymous statistics:
+- When a page is loaded
+  - Timestamp
+- When a `View Module` button is clicked
+  - Timestamp
+  - Module ID
+  - Module PPM
+
+*(No personal information is sent or collected)*

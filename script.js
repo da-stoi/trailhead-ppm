@@ -60,6 +60,13 @@ function populateModuleList(moduleData) {
   openModule.target = "_blank";
   openModule.textContent = "View Module";
 
+  openModule.onclick = () => {
+
+    // Log module interaction for anonymous usage stats
+    // Only collects what was interacted with, not who interacted with it
+    fetch(`https://docs.google.com/forms/d/e/1FAIpQLScANQzvx1WrjpEoysbCXYUiHtbJPfNw1Clc0je2iOlcPN2KGg/formResponse?entry.163422026=module_interaction&entry.988610028=${moduleData.id}&entry.2094226950=${moduleData.ppm}&submit=Submit`);
+  };
+
   listItem.appendChild(openModule);
 
   moduleList.appendChild(listItem);
@@ -108,6 +115,9 @@ function getData() {
       resetSort();
     });
 
+  // Log website load for anonymous usage stats
+  // Only collects that the website was loaded, not who loaded it
+  fetch("https://docs.google.com/forms/d/e/1FAIpQLScANQzvx1WrjpEoysbCXYUiHtbJPfNw1Clc0je2iOlcPN2KGg/formResponse?entry.163422026=website_load&submit=Submit");
 }
 
 // Reset sort buttons
