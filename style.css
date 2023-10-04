@@ -30,6 +30,11 @@ header {
   font-family: 'Inclusive Sans', sans-serif;
 }
 
+header img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
 header span {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
@@ -216,7 +221,7 @@ footer {
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 footer a {
@@ -233,6 +238,7 @@ footer a {
 }
 
 @media (max-width: 600px) {
+
   /* Line break footer p */
   footer {
     display: block;
